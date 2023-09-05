@@ -141,18 +141,6 @@ function NotesPanelHeader({
       { collapsedHeaderElement } 
 
       <DataElementWrapper
-        className="input-container"
-        dataElement={`${DataElements.NotesPanel.DefaultHeader.INPUT_CONTAINER}`}>
-        <input
-          type="text"
-          placeholder={t('message.searchCommentsPlaceholder')}
-          aria-label={t('message.searchCommentsPlaceholder')}
-          onChange={handleInputChange}
-          id="NotesPanel__input"
-        />
-      </DataElementWrapper>
-
-      <DataElementWrapper
         className="comments-counter"
         dataElement={`${DataElements.NotesPanel.DefaultHeader.COMMENTS_COUNTER}`}>
         <span className='main-comment'>{t('component.notesPanel')}</span> {`(${notes.length})`}
